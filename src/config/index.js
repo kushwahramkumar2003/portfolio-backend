@@ -11,6 +11,7 @@ const config = {
   MAIL_USER: process.env.MAIL_USER || "example@example.com",
   MAIL_PASS: process.env.MAIL_PASS || "password",
   BLOGS_API_DOMAIN: process.env.BLOGS_API_DOMAIN || "http://localhost:3001",
+  BLOGS_SITE: process.env.BLOGS_SITE || "http://localhost:3000",
 };
 
 module.exports = config;

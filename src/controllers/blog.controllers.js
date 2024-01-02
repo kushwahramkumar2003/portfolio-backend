@@ -8,6 +8,12 @@ exports.getBlogs = async (req, res) => {
     );
 
     blogs.data = blogs.data.slice(0, 6);
+    blogs.data = blogs.data.map((blog) => {
+      blog.url = `${config.BLOGS_SITE}#/blog/${blog.slug}`;
+      return blog;
+    });
+
+    
 
     res.status(200).json(blogs.data);
   } catch (error) {
