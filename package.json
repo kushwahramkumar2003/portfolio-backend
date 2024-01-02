@@ -8,7 +8,9 @@
     "install-deps": "npm install",
     "start": "node index.js",
     "build": "npm run install-deps && npm run pre-build && npm run post-build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pre-build": "echo 'Performing pre-build tasks...'",
+    "post-build": "echo 'Build completed.'"
   },
   "keywords": [],
   "author": "",
